@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    run: next-demo
+  name: next-demo
+  selfLink: /api/v1/namespaces//services/next-demo
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    run: next-demo
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}
