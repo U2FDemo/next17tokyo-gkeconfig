@@ -28,7 +28,7 @@ spec:
       - command:
         - node
         - app/server.js
-        image: gcr.io/wdenniss-gke-next17/bitbucket-wdenniss-next17tokyo-gkedemo:59ecf453280778dcc7df60fd600913d4ea756639
+        image: gcr.io/wdenniss-gke-next17/bitbucket-wdenniss
         imagePullPolicy: IfNotPresent
         name: next-demo
         ports:
